@@ -36,13 +36,13 @@
                     {{navigation}}
                     {{#if @labs.members}}
                         {{#if @member}}
-                            <button class="button-text menu-item members-account" data-portal="account">Account</button>
+                            <button class="button-text menu-item members-account" data-portal="account">{{t "Account"}}</button>
                             {{#unless @member.paid}}
-                                <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
+                                <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">{{t "Upgrade"}}</button>
                             {{/unless}}
                         {{else}}
                             <button class="button-text menu-item members-login" data-portal="signin">Login</button>
-                            <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
+                            <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">{{t "Subscribe"}}</button>
                         {{/if}}
                     {{/if}}
                 </nav>
@@ -52,12 +52,12 @@
     <div class="header-right hidden-xs hidden-sm hidden-md">
         {{#if @labs.members}}
             {{#if @member}}
-                <button class="button-text menu-item members-account" data-portal="account">Account</button>
+                <button class="button-text menu-item members-account" data-portal="account">{{t "Account"}}</button>
                 {{#unless @member.paid}}
-                    <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
+                    <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">{{t "Upgrade"}}</button>
                 {{/unless}}
             {{else}}
-                <button class="button-text menu-item members-login" data-portal="signin">Login</button>
+                <button class="button-text menu-item members-login" data-portal="signin">{{t "Login"}}</button>
                 <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
             {{/if}}
         {{else}}

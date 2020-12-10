@@ -449,23 +449,23 @@ function theme() {
 
     function system() {
         html.removeClass(['theme-dark', 'theme-light']);
-        localStorage.removeItem('dawn_theme');
+        localStorage.removeItem('simon_theme');
         toggleText.text(toggle.attr('data-system'));
     }
 
     function dark() {
         html.removeClass('theme-light').addClass('theme-dark');
-        localStorage.setItem('dawn_theme', 'dark');
+        localStorage.setItem('simon_theme', 'dark');
         toggleText.text(toggle.attr('data-dark'));
     }
 
     function light() {
         html.removeClass('theme-dark').addClass('theme-light');
-        localStorage.setItem('dawn_theme', 'light');
+        localStorage.setItem('simon_theme', 'light');
         toggleText.text(toggle.attr('data-light'));
     }
 
-    switch (localStorage.getItem('dawn_theme')) {
+    switch (localStorage.getItem('simon_theme')) {
         case 'dark':
             dark();
             break;

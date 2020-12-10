@@ -1,6 +1,6 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
+    "name": "simon",
+    "description": "A Ghost theme developed on Dawn theme",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
@@ -8,9 +8,9 @@
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Anisul Kibria",
+        "email": "a@anisul.com",
+        "url": "http://anisul.com"
     },
     "keywords": [
         "ghost",
