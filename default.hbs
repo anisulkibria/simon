@@ -31,6 +31,10 @@
         var gh_search_migration = 'v2';
     </script>
 
+    <script>
+        var gh_white_logo = '{{asset "images/logo-dark-horizontal-word-image-design.png"}}';
+    </script>
+
     {{ghost_head}}
 </head>
 
@@ -40,7 +44,23 @@
     <div class="site">
         {{> header}}
         {{#is "home"}}
-        {{> membership}}
+
+        {{#get "pages" slug="hero" as |hero|}}
+        {{#hero limit=1}}
+        {{#has slug="hero"}}
+        {{> hero}}
+        {{/has}}
+        {{/hero}}
+        {{/get}}
+
+        {{#get "pages" slug="cover" as |cover|}}
+        {{#cover limit=1}}
+        {{#has slug="cover"}}
+        {{> cover}}
+        {{/has}}
+        {{/cover}}
+        {{/get}}
+        
         {{> featured}}
         {{/is}}
         <div class="site-content">

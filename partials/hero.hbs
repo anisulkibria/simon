@@ -1,0 +1,12 @@
+<div class="hero-wrapper">
+    <div class="container">
+        <div class="hero">
+            {{#if @site.cover_image}}
+            <div class="cover-icon">
+                <img class="cover-icon-image" src="{{@site.cover_image}}" alt="{{@site.title}}">
+            </div>
+            {{/if}}
+            {{content}}
+        </div>
+    </div>
+</div>

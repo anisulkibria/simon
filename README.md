@@ -1,4 +1,4 @@
-# Simon
+# Dawn
 
 A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license.
 
@@ -47,6 +47,45 @@ If your logo image isn't recognizable in dark mode, you can set a white version 
 <script>
     var gh_white_logo = 'https://example.com/content/images/white-logo.png';
 </script>
+```
+
+# Hero Section
+
+Please publish a page with slug "hero" to add content to hero section of homepage. Here is am example content for this page: 
+
+```html
+<h2 class="hero-title">Improve your communications: focus on the fundamentals & craft, not the trends.</h2>
+<p class="hero-subtitle">Grow your creativity, productivity and knowledge. Be ready for whatever comes next.</p>
+<div class="hero-cta">
+    <a class="button" href="/about/">Learn more</a><a class="button primary" href="#"
+        data-members-signin="" data-portal="signup">"Sign up now"</a>
+</div>
+<h3 class="hero-feature">"Sign-up to receive short weekly updates. including:"</h3>
+<div class="hero-grid">
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>Latest posts.</h4>
+    </div>
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>Inspiration from experts.</h4>
+    </div>
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>Learning content.</h4>
+    </div>
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>No ‘hacks’.</h4>
+    </div>
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>No clickbait.</h4>
+    </div>
+    <div class="hero-grid-item">
+        <h4><span class="check">&#10004;</span>No spam, ever.</h4>
+    </div>
+</div>
+<blockquote>“In a world where intelligence is hyper-competitive and many previous technical skills have become
+    automated, competitive advantages tilt toward nuanced and soft skills—like communication, empathy, and,
+    perhaps most of all, flexibility.”<br>
+    <span class="name">- Morgan Housel</span>
+</blockquote>
 ```
 
 # Development
